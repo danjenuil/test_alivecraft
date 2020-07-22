@@ -1,19 +1,372 @@
-h6 Hello Planet Earth
-p Find me in app/views/pages/index.html.slim
+section.flex.justify-center.bg-red-dark.py-5
+  h3.text-white AliveCraft Design System
 
-a.btn.btn-primary-lg-blue CTA
-a.btn.btn-primary-md-blue CTA
-a.btn.btn-primary-sm-blue CTA
-a.sm-link-blue href='#' This is a small link
+section.container.flex.flex-col.items-start.justify-between.ml-10
 
-form action='/'
-  input.mt-8.ml-8 type='text' name='test' placeholder='Placeholder'
-  .flex.flex-wrap.items-stretch.w-full.mb-4.relative
-    .flex.-mr-px
-      span.flex.items-center.leading-normal.bg-grey-lighter.rounded-r-none.border.border-r-0.border-grey-light.px-3.whitespace-no-wrap.text-grey-dark.text-sm @
-    input.flex-shrink.flex-grow.flex-auto.leading-normal.w-px.flex-1.border.h-10.border-grey-light.rounded-l-none.px-3.relative.focus:border-blue.focus:shadow placeholder='Username'
-  input.ml-4.rounded-l-input type='password' name='password' placeholder='xxxxxxx'
+  h4.mb-10 Typography (Heading 1 - Heading 6)
+  
+  h1 The quick brown fox jumps over the lazy dog
+  h2 The quick brown fox jumps over the lazy dog
+  h3 The quick brown fox jumps over the lazy dog
+  h4 The quick brown fox jumps over the lazy dog
+  h5 The quick brown fox jumps over the lazy dog
+  h6 The quick brown fox jumps over the lazy dog
 
-textarea.mt-4.ml-8 placeholder='Ya Allah, berkatilah satukanlah hati kedua pasangan mempelai ini dengan iman, keyakinan dan tawakal kepadaMu, panjangkan umur mereka, lapangkanlah rezeki mereka, dekatlah mereka menuju kebaikan, jauhkanlah mereka dari keburukan, kurniakanlah mereka zuriat yang soleh dan solehah.'
+  h4.my-10 Links
 
-.status-live
+  = link_to 'The wizard quickly jinxed the gnomes before they vaporized', '#', class: 'xs-link-blue'
+  = link_to 'The wizard quickly jinxed the gnomes before they vaporized', '#', class: 'xs-link-purple'
+  = link_to 'The wizard quickly jinxed the gnomes before they vaporized', '#', class: 'xs-link-red'
+  = link_to 'The wizard quickly jinxed the gnomes before they vaporized', '#', class: 'sm-link-blue'
+
+  h4.my-10 Buttons
+
+  h5.mb-6 Primary Buttons
+
+  h6.mb-4 Blue
+  section.mb-6
+    a.btn.btn-lg.btn-primary.btn-primary-blue CTA
+    a.btn.btn-md.btn-primary.btn-primary-blue.mx-3 CTA
+    a.btn.btn-sm.btn-primary.btn-primary-blue CTA
+
+  h6.mb-4 Red
+  section.mb-6
+    a.btn.btn-lg.btn-primary.btn-primary-red CTA
+    a.btn.btn-md.btn-primary.btn-primary-red.mx-3 CTA
+    a.btn.btn-sm.btn-primary.btn-primary-red CTA
+
+  h6.mb-4 Magenta
+  section.mb-6
+    a.btn.btn-lg.btn-primary.btn-primary-magenta CTA
+    a.btn.btn-md.btn-primary.btn-primary-magenta.mx-3 CTA
+    a.btn.btn-sm.btn-primary.btn-primary-magenta CTA
+
+  h5.mb-6 Secondary Buttons
+
+  h6.mb-4 Blue
+  section.mb-6
+    a.btn.btn-lg.btn-secondary-blue CTA
+    a.btn.btn-md.btn-secondary-blue.mx-3 CTA
+    a.btn.btn-sm.btn-secondary-blue.mr-3 CTA
+    a.btn.btn-xs.btn-secondary-blue CTA
+
+  h6.mb-4 Red
+  section.mb-6
+    a.btn.btn-lg.btn-secondary-red CTA
+    a.btn.btn-md.btn-secondary-red.mx-3 CTA
+    a.btn.btn-sm.btn-secondary-red.mr-3 CTA
+    a.btn.btn-xs.btn-secondary-red CTA
+
+  h6.mb-4 Magenta
+  section.mb-6
+    a.btn.btn-lg.btn-secondary-magenta CTA
+    a.btn.btn-md.btn-secondary-magenta.mx-3 CTA
+    a.btn.btn-sm.btn-secondary-magenta.mr-3 CTA
+    a.btn.btn-xs.btn-secondary-magenta CTA
+
+  h4.my-10 Pillbox
+
+  section.flex.justify-start
+    p.pillbox.self-center.mr-2 Content
+    p.pillbox.active.self-center Content
+
+  h4.my-10 Main header
+  section.container
+    header.alive-promotion
+      | Alive Invite | #SUPERJIMAT Promo, Get Printed + Digital Set from RM100 only!
+    header.alive-main-header
+      section.header-top
+        section.header-nav-left
+          .nav-item.active
+            .nav-item-icon
+              = image_pack_tag 'headers/default/Card.svg'
+            .nav-item-icon-active
+              = image_pack_tag 'headers/active/Card.svg'
+            .nav-item-name
+              | Invite
+          .nav-item
+            .nav-item-icon
+              = image_pack_tag 'headers/default/Photo.svg'
+            .nav-item-icon-active
+              = image_pack_tag 'headers/active/Photo.svg'
+            .nav-item-name
+              | Photo
+          .nav-item
+            .nav-item-icon
+              = image_pack_tag 'headers/default/Gift.svg'
+            .nav-item-icon-active
+              = image_pack_tag 'headers/active/Gift.svg'
+            .nav-item-name
+              | Goodies
+        section.alive-logo
+          = image_pack_tag 'logo/AliveInvite_Logo.svg'
+        section.header-nav-right
+          .nav-item
+            .nav-item-icon
+              = image_pack_tag 'headers/default/Notification.svg'
+            .nav-item-icon-active
+              = image_pack_tag 'headers/active/Notification.svg'
+            .nav-item-name
+              | Notification
+          .nav-item
+            .nav-item-icon
+              = image_pack_tag 'headers/default/Account.svg'
+            .nav-item-icon-active
+              = image_pack_tag 'headers/active/Account.svg'
+            .nav-item-name
+              | My Account
+          .nav-item
+            .nav-item-icon
+              = image_pack_tag 'headers/default/Cart.svg'
+            .nav-item-icon-active
+              = image_pack_tag 'headers/active/Cart.svg'
+            .nav-item-name
+              | Shopping Cart
+      section.header-bottom
+        ul.alive-menus
+          li.alive-menu-item.alive-menu-dropdown
+            = link_to 'Discover', '#'
+          li.alive-menu-item
+            = link_to 'Photo Package', '#'
+          li.alive-menu-item
+            = link_to 'Sales', '#'
+          li.alive-menu-item.alive-menu-dropdown
+            = link_to 'Collabs', '#'
+          li.alive-menu-item
+            = link_to 'Support', '#'
+          li.alive-menu-item
+            = link_to 'About', '#'
+          li.alive-menu-item
+            = link_to 'Be Our Designer', '#'
+
+      
+  h4.my-10 Mega Button
+
+  section.flex.justify-center.px-20
+    section.alive-mega-menu
+      section.mega-menu-intro 
+        h4 Explore the variation of card designs that you can get here
+      section.mega-menu-content
+        section.explore
+          section.explore-menu
+            h6.mb-6 By theme
+            ul
+              li Islamic 
+              li Vintage
+              li Floral 
+              li Simple 
+              li Traditional 
+              li Futuristic
+              li Modern
+              li Minimalistic 
+              li Abstract
+            = link_to 'More', '#', class: 'xs-link-blue mt-4'
+          section.explore-menu
+            h6.mb-6 By color
+            ul
+              li Blue
+              li Red
+              li Green
+              li Gold
+              li Black
+              li White
+              li Yellow
+              li Beige
+              li Offwhite
+            = link_to 'More', '#', class: 'xs-link-blue mt-4'
+          section.explore-menu
+            h6.mb-6 By type
+            ul
+              li Digital + Print
+              li Digital only
+              li Print only 
+        section.events
+          h6.mb-6 Events
+          section.event-info
+            section.event-preview.h-8.w-40.border-2
+            section.event-description Discover how card is printed with letterpress
+          section.event-info
+            section.event-preview.h-8.w-40.border-2
+            section.event-description Nak Kawin SHOW. <br> 19th August 2020, <br> 3:30 PM on FB Live
+          = link_to 'View all events', '#', class: 'xs-link-blue mt-4'
+  h4.my-10 Small menu
+  section.flex.container.mt-5
+    section.alive-small-menu
+      ul
+        li Partnership Program
+        li Be A Vendor
+
+
+  h4.my-10 Forms
+
+  form action='/'
+    p.font-bold.mb-8 Short Text
+    input.ml-8 type='text' name='test' placeholder='Placeholder'
+    .alive-input-group.with-right-icon.ml-8.my-3
+      input type='password' name='password' placeholder='xxxxxx'
+      span.input-right-icon.eye
+    .alive-select.ml-8
+      select
+        option Connecticut
+        option Missouri
+        option Texas
+      .alive-select-arrow
+    p.font-bold.mb-8.mt-8 Long Paragraph
+    textarea.mt-4.ml-8 placeholder='Ya Allah, berkatilah satukanlah hati kedua pasangan mempelai ini dengan iman, keyakinan dan tawakal kepadaMu, panjangkan umur mereka, lapangkanlah rezeki mereka, dekatlah mereka menuju kebaikan, jauhkanlah mereka dari keburukan, kurniakanlah mereka zuriat yang soleh dan solehah.'
+
+    .alive-input-group.with-right-icon.ml-8.mb-8
+      input type='date'
+      span.absolute.calendar
+
+    .alive-input-group.with-left-icon.with-right-icon.ml-8.mb-8
+      span.input-left-icon @
+      input type='text'
+      span.input-right-icon .com
+
+    p.font-bold.mb-8.mt-8 Quantity Picker
+    section.ml-8 style='width: 80px;'
+      .alive-quantity-picker
+        span.decrement
+        = number_field_tag 'quantity', '100'
+        span.increment
+
+    
+
+
+  h4.my-10 Statuses
+  .flex.justify-around style='width: 350px;'
+    .status-live
+    .status-draft
+    .status-payment-pending
+
+  h4.my-10 Cards
+  .blog-card-sm.ml-8
+    .blog-preview
+      = image_pack_tag 'blogs/Image_3.png'
+    .blog-description
+      .blog-date
+        | 03 Nov
+      .blog-title
+        | What are the hottest dates for your wedding in 2020?
+
+  section.p-6.ml-8.mt-8
+    .blog-card-lg
+      .blog-preview
+        = image_pack_tag 'blogs/Image_3@3x.png'
+      .blog-description
+        .blog-date
+          | 03 Nov
+        .blog-title
+          | What are the hottest dates for your wedding in 2020?
+        .blog-excerpt
+          | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis…
+        .blog-read-link
+          = link_to 'Read', '#', class: 'btn btn-sm btn-secondary-red'
+  section.flex.pl-24
+    .collabs-card.mr-6
+      .collabs-card-content
+        .collabs-card-icon
+          = image_pack_tag 'collabs/wedding-couple@4x.png'
+        .collabs-card-description
+          | Wedding planning with full wedding package
+    .collabs-card
+      .collabs-card-content
+        .collabs-card-icon
+          = image_pack_tag 'collabs/wedding-couple@4x.png'
+        .collabs-card-description
+          | Wedding invitation card
+  section.flex.flex-col.justify-center.p-5
+    .checkout-payment-method-card.mb-5
+      .payment-method-name
+        | Interest-free Instalment
+      .payment-method-logo
+        = image_pack_tag 'logo/alivepay.png'
+    .checkout-payment-method-card.active
+      .payment-method-name
+        | Interest-free Instalment
+      .payment-method-logo
+        = image_pack_tag 'logo/alivepay.png'
+  section.container
+    table.alive-text-table
+      thead
+        tr
+          th Date
+          th Transaction
+          th Points
+          th Remark
+          th Expiry Date
+      tbody
+        tr
+          td 19 Aug 2019
+          td Credited in
+          td 10
+          td Invited a friend
+          td 19 Aug 2019
+        tr
+          td 11 Jul 2019
+          td Credited in
+          td 10
+          td Invited a friend
+          td 11 Jul 2019
+        tr
+          td 27 Jun 2019
+          td Credited in
+          td 10
+          td Invited a friend
+          td 27 Jun 2019
+        tr
+          td 03 Jun 2019
+          td Credited in
+          td 10
+          td Invited a friend
+          td 03 Jun 2019
+        tr
+          td 01 Jun 2019
+          td Expired points
+          td.text-red 70
+          td Invited a friend
+          td 01 Jun 2019
+  section.container
+    table.alive-picture-table
+      thead
+        tr
+          th Product Details
+          th Quantity
+          th Type
+          th Price (MYR)
+      tbody
+        tr
+          td
+            section.flex.flex-no-wrap
+              section.h-40.w-40.border-2.mr-3
+              section.flex.flex-col.justify-between
+                section
+                  h6 Cleopatra
+                  p Digital + Print
+                section
+                  = link_to 'Remove', '#', class: 'xs-link-red'
+          td.text-center.flex.justify-start.w-40
+            .alive-quantity-picker
+              span.decrement
+              = number_field_tag 'table_quantity_one', '100'
+              span.increment
+          td Basic
+          td.text-center 126.00
+        tr
+          td
+            section.flex.flex-no-wrap
+              section.h-40.w-40.border-2.mr-3
+              section.flex.flex-col.justify-between
+                section
+                  h6 Cleopatra
+                  p Envelope
+                section
+                  = link_to 'Remove', '#', class: 'xs-link-red'
+          td.text-center.flex.justify-start.w-40
+            .alive-quantity-picker
+              span.decrement
+              = number_field_tag 'table_quantity_one', '100'
+              span.increment
+          td Basic
+          td.text-center 25.00
+

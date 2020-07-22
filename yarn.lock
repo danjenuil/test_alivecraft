@@ -753,6 +753,11 @@
     webpack-cli "^3.3.10"
     webpack-sources "^1.4.3"
 
+"@rmbtn/alivecraft@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@rmbtn/alivecraft/-/alivecraft-1.0.0.tgz#e78af0b221e3f7c6ec2461f9f753e4c91e7ddaa6"
+  integrity sha512-ScaKs9yY8JXcP1/FpY+YwoaGSseu1yG9QFCTMYu1T3wEVcNOAcwrhGB8xo8pMWM6ymhRMBOSII8MmOVONNBUpQ==
+
 "@types/events@*":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@types/events/-/events-3.0.0.tgz#2862f3f58a9a7f7c3e78d79f130dd4d71c25c2a7"
